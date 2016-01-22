@@ -6,9 +6,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: '/build/'
   },
   devtool: 'source-map',
   debug: true,
@@ -39,4 +39,3 @@ module.exports = {
     includePaths: [path.resolve(__dirname, "./node_modules/node-normalize-scss")]
   }
 }
-
