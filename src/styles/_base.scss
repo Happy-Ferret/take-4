@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url('../images/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  font: message-box;
+  font-size: 85%;
+}

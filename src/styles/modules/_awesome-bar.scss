@@ -1,0 +1,24 @@
+#awesome-bar-wrapper {
+  @include flex-container(row, flex-start, stretch);
+  margin: 5px;
+  flex: 1;
+
+  button {
+    appearance: none;
+    border: none;
+    flex: 0 0 24px;
+    background: #ccc;
+  }
+
+}
+
+#awesome-bar {
+  @include flex-container(row, flex-start, stretch);
+  flex: 1;
+  input {
+    flex: 1;
+    border: none;
+    height: 25px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'normalize';
+@import 'helpers';
+
+@import 'base';
+@import 'layout';
+@import 'theme';
+@import 'modules';
+
+#outer-flex-wrapper {
+  @include flex-container(column, center, center);
+  min-height: 100vh;
+}
+
+#app {
+  @include flex-container(column, flex-start, stretch);
+  border-radius: 4px;
+  box-shadow: 0 0 1px $transparent-black-2, 0 0 20px $transparent-black-2;
+  flex: 0 0 94vh;
+  width: 94%;
+
+  & > :first-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  & > :last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+

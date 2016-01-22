@@ -1,0 +1,31 @@
+.tab {
+  @include flex-container(default, space-between, center);
+  border-right: 1px solid #ddd;
+  flex: 0 0 180px;
+  height: 40px;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipses;
+  transition: background 50ms, box-shadow 150ms;
+  user-select: none;
+  white-space: nowrap;
+
+  &[data-active="true"] {
+    box-shadow: 0 -3px 0 $mobile-blue inset;
+  }
+
+  &:hover {
+    background: rgba(0,0,0,.03);
+  }
+
+  .tab-start,
+  .tab-end {
+    flex: 0 0 8px;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+  }
+
+}

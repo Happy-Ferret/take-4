@@ -1,0 +1,27 @@
+#browser-tab-bar {
+  @include flex-container(default, flex-start, center);
+  background: rgba(249,249,249,.95);
+  border-bottom: 1px solid #ccc;
+  flex: 0 0 40px;
+}
+
+#browser-tool-bar {
+  @include flex-container(default, space-between, center);
+  background: #eaeaea;
+  border-bottom: 1px solid #ccc;
+  flex: 0 0 40px;
+}
+
+#browser-tool-bar-custom-area {
+  flex: 1;
+}
+
+#browser-page {
+  background: #fff;
+  flex: 1;
+}
+
+#arbitrary-page {
+  height: 100%;
+  width: 100%;
+}
